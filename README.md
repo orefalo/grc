@@ -6,10 +6,10 @@
 
 ## Install
 
-With [fisherman]
+With [fisher]
 
 ```
-fisher grc
+fisher add orefalo/grc
 ```
 
 ## Usage
