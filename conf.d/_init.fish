@@ -1,13 +1,11 @@
 
-set -l grc_plugin_execs (command ls ../configs)
+set -l grc_plugin_execs (command ls ./configs)
 
 if command -s cgrc > /dev/null
     for executable in $grc_plugin_execs
-        if type -q $executable
-            function $executable --inherit-variable executable --wraps=$executable
-                set -l options "grc_wrap_options_$cmd"
-                command "$executable" $argv | cgrc $$options "$executable"
-            end
+        function $executable --inherit-variable executable --wraps=$executable
+            set -l options "grc_wrap_options_$cmd"
+            command "$executable" $argv | cgrc $$options "$executable"
         end
     end
 else
