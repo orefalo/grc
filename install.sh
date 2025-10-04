@@ -6,4 +6,4 @@ cargo install cgrc
 # install config files
 CONFIG=`cgrc --location-user`
 mkdir -p "$CONFIG"
-cp -R config/* "$CONFIG"
+cp -R configs/* "$CONFIG"
