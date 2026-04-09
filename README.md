@@ -20,7 +20,7 @@ fisher add orefalo/grc
 
 Make sure to install the official grc command: <https://github.com/garabik/grc> as well.
 
-Along with the configuration files at https://github.com/garabik/grc/tree/master/colourfiles
+Along with the configuration files from the repo itself or at https://github.com/garabik/grc/tree/master/colourfiles
 Which you will need to copy to a local folders, run `cgrc --list-locations` to find the path
 
 ### Default commands
