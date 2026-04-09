@@ -1,6 +1,6 @@
 
 set -l grc_plugin_execs configure env gcc ifconfig lsof mount netstat \
-    sysctl uptime vmstat whois
+    sysctl uptime vmstat whois ping
 
 if command -s cgrc > /dev/null
     for executable in $grc_plugin_execs
